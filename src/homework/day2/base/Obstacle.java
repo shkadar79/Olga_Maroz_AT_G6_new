@@ -10,18 +10,22 @@ public class Obstacle {
     }
 
     public String getDescription() {
+
         return description;
     }
 
     public void setDescription(String description) {
+
         this.description = description;
     }
 
     public String getSeverity() {
+
         return severity;
     }
 
     public void setSeverity(String severity) {
+
         this.severity = severity;
     }
 

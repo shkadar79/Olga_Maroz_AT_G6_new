@@ -18,10 +18,12 @@ public class Bee {
     }
 
     public long getWeight() {
+
         return weight;
     }
 
     public void setWeight(long weight) {
+
         this.weight = weight;
     }
 
