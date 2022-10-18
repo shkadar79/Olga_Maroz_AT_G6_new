@@ -6,10 +6,10 @@ public class GenericContainerRunner {
         for (int i = 0; i < 10; i++) {
             container.add(i);
         }
-        System.out.println(container+ "-created!\n");
-        while(!container.isEmpty()){
+        System.out.println(container + "-created!\n");
+        while (!container.isEmpty()) {
             int integer = container.removeLast();
-            System.out.println();
-        }
+            System.out.println("Number" + integer + "removed");
         }
     }
+}

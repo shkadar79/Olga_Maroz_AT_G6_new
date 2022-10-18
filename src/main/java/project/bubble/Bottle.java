@@ -1,4 +1,4 @@
-package main.java.bubble;
+package main.java.project.bubble;
 
 public class Bottle {
     private double volume;

@@ -1,4 +1,4 @@
-package reserve.bubble;
+package main.java.project.bubble;
 
 public class SparklingWater extends Water {
     private boolean isOpened;

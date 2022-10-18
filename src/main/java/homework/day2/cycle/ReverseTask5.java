@@ -2,8 +2,8 @@ package main.java.homework.day2.cycle;
 
 import java.util.Random;
 
-public class Task6 {
-    public static void printTask6() {
+public class ReverseTask5 {
+    public void printReverseTask5() {
 
         Random random = new Random();
         int[] myArray = new int[5];
@@ -12,15 +12,11 @@ public class Task6 {
             System.out.println(myArray[i]);
 
         }
-        int a = myArray[0];
-        int b = myArray[1];
-        int c = myArray[2];
-        int d = myArray[3];
-        int e = myArray[4];
-
-        System.out.print(e + " " + b + " " + c + " " + d + " " + a);
+        int x = myArray.length - 1;
+        for (int i = x; i >= 0; i--) {
+            System.out.print(myArray[i] + " ");
+        }
         System.out.println();
     }
 }
-
 

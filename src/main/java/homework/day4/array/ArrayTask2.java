@@ -8,6 +8,8 @@ public class ArrayTask2 {
             sum += a;
         }
         System.out.println(sum);
-
     }
+
+
+
 }

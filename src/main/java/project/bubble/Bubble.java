@@ -1,4 +1,4 @@
-package reserve.bubble;
+package main.java.project.bubble;
 
 public class Bubble {
     private double volume = 0.3;

@@ -1,53 +1,50 @@
 package main.java.homework.day2.base;
 
 public class TrainMethodsReturn {
-    public static void returnNewInt() {
-        int x = 2;
-        int y = x * 3;
-        System.out.println("метод returnNewInt вернул" + " " + y);
+    public int returnNewInt(int incoming) {
+        int y = incoming * 3;
+        return y;
     }
 
-    public static void returnNewLong() {
-        long x = 2255225522L;
-        long y = x - 4;
-        System.out.println("метод returnNewLong вернул" + " " + y);
+    public long returnNewLong(long incoming) {
+        long y;
+        y = incoming - 4;
+        return y;
     }
 
-    public static void returnNewChar() {
-        char x = '%';
-        System.out.println("метод returnNewChar вернул" + " " + x + "" + x);
+    public String returnNewChar(char incoming) {
+        char y;
+        y = incoming;
+        return y + "" + y;
     }
 
-    public static void returnNewFloat() {
-        float x = 0.5f;
-        float y = x / 2;
-        System.out.println("метод returnNewFloat вернул" + " " + y);
+    public float returnNewFloat(float incoming) {
+        float y = incoming / 2;
+        return y;
     }
 
-    public static void returnNewDouble() {
-        double x = 33333.3333333333333d;
-        double y = x + 8;
-        System.out.println("метод returnNewDouble вернул" + " " + y);
+    public double returnNewDouble(double incoming) {
+        double y = incoming + 8;
+        return y;
     }
 
-    public static void returnNewShort() {
-        short x = 32;
-        int y = x - 1;
-        System.out.println("метод returnNewShort вернул" + " " + y);
+    public short returnNewShort(short incoming) {
+        short y = (short) (incoming - 1);
+        return y;
     }
 
-    public static void returnNewByte() {
-        byte x = 10;
-        int y = x * 1;
-        System.out.println("метод returnNewByte вернул" + " " + y);
+    public byte returnNewByte(byte incoming) {
+        byte y = (byte) (incoming * 1);
+        return y;
     }
 
-    public static void returnNewBoolean() {
-        boolean x = true;
-        Boolean y;
-        y = !x;
-        System.out.println("метод returnNewBoolean вернул" + " " + y);
+    public String returnNewBoolean(boolean incoming) {
+        String y;
+        if (incoming == true) {
+            y = "false";
+        } else {
+            y = "true";
+        }
+        return y;
     }
-
-
 }
