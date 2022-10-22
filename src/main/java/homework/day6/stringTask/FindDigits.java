@@ -2,13 +2,15 @@ package main.java.homework.day6.stringTask;
 
 public class FindDigits {
     public void printDigits(String incoming) {
-        String[] splitIncoming = incoming.split("");
-        int digit = 0;
-        for (String i : splitIncoming) {
+        String[] splitIncoming = incoming.split("\\D+");
+        int[] newArray = new int[splitIncoming.length];
 
-            if (i.matches(String.valueOf(0 - 9))) {
+        for (int i = 0; i < splitIncoming.length; i++) {
+            if (!splitIncoming[i].equalsIgnoreCase("")) {
+                newArray[i] = Integer.valueOf(splitIncoming[i]);
+                System.out.println(newArray[i]);
             }
-            System.out.println(i);
+
         }
     }
 }

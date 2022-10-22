@@ -1,7 +1,9 @@
 package main.java.homework.day6.stringTask;
 
+import java.text.ParseException;
+
 public class StringTaskRunner {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
 
         LettersFromLineToColumn task1 = new LettersFromLineToColumn();
         task1.printLettersToColumn("Мама мыла раму");
