@@ -15,7 +15,14 @@ public class CountriesList {
             System.out.print(i + ", ");
         }
         System.out.println();
-        //TODO посчитать страны, в названии которых меньше 7 букв, вывести в корсоль число
+
+        int counter = 0;
+        for (String i : countries) {
+            if (i.length() < 7) {
+                counter++;
+            }
+        }
+        System.out.println(counter);
 
         for (int i = 0; i < countries.size(); i++) {
             System.out.print(countries.get(i) + " ");

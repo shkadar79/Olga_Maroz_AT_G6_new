@@ -12,10 +12,12 @@ public class CitiesList {
         for (String i : cities) {
             System.out.println(i);
         }
-        //TODO посчитать сумму всех буквво всех словах и вывести в консоль
+
+        int counter = 0;
         for (String i : cities) {
-            System.out.println(i.length());
+            counter += i.length();
         }
+        System.out.println(counter);
 
         for (int i = 0; i < cities.size(); i++) {
             System.out.print(cities.get(i) + " ");

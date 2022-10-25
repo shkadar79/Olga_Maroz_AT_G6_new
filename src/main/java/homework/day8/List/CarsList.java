@@ -1,13 +1,12 @@
 package main.java.homework.day8.List;
 
-import java.io.FileNotFoundException;
-import java.io.PrintStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class CarsList {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         List<String> cars = new ArrayList<>();
         cars.add("Мерс");
         cars.add("Ауди");
@@ -17,9 +16,15 @@ public class CarsList {
         cars.add("Жигуль");
         cars.add("Ауди");
 
-        //TODO отпечатать в файл cars с новой строки в ковычках
+        StringBuilder printList = new StringBuilder();
+        for (String i : cars) {
+            printList.append("\"").append(i).append("\"").append("\n");
+        }
+        BufferedWriter out = new BufferedWriter(new FileWriter("cars.txt"));
+        out.write(printList.substring(0, printList.length()));
+        out.close();
 
-        //TODO найти и удалить из набора авто, в названии которых больше 4 букв
+        cars.removeIf(i -> i.length() > 4);
 
         for (String i : cars) {
             System.out.print(i + " ");

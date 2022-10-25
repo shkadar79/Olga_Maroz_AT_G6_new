@@ -13,9 +13,14 @@ public class ButterfliesList {
         for (String i : butterflies) {
             System.out.println("\"" + i + "\"");
         }
-        // TODO посчитать сколько бабочек содержит букву "о", вывести число в консоль
 
-
+        int counter = 0;
+        for (String i : butterflies) {
+            if (i.contains("o")) {
+                counter++;
+            }
+        }
+        System.out.println(counter);
 
         for (int i = 0; i < butterflies.size(); i++) {
             System.out.print(butterflies.get(i) + " ");
