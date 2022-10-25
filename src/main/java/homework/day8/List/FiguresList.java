@@ -16,7 +16,7 @@ public class FiguresList {
             printList.append(i).append("-");
         }
         BufferedWriter out = new BufferedWriter(new FileWriter("figure.txt"));
-        out.write(printList.substring(0, printList.length()));
+        out.write(printList.substring(0, printList.length()-1));
         out.close();
 
         int counter = 0;
