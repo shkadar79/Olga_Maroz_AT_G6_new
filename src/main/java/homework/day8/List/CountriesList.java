@@ -11,9 +11,12 @@ public class CountriesList {
         countries.add("Англия");
         countries.add("Замбия");
 
+        StringBuilder printList = new StringBuilder();
         for (String i : countries) {
-            System.out.print(i + ", ");
+            printList.append(i).append(", ");
         }
+        System.out.print(printList.substring(0, printList.length()-2));
+
         System.out.println();
 
         int counter = 0;
@@ -25,7 +28,7 @@ public class CountriesList {
         System.out.println(counter);
 
         for (int i = 0; i < countries.size(); i++) {
-            System.out.print(countries.get(i) + " ");
+            System.out.println(countries.get(i));
         }
     }
 }
