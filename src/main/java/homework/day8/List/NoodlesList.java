@@ -11,9 +11,12 @@ public class NoodlesList {
         noodles.add("Hibachi");
         noodles.add("Schezwan");
 
+        StringBuilder printList = new StringBuilder();
         for (String i : noodles) {
-            System.out.print(i + "-");
+            printList.append(i).append("-");
         }
+        System.out.print(printList.substring(0, printList.length()-1));
+
         System.out.println();
 
         for (int i = 0; i<noodles.size(); i++) {
