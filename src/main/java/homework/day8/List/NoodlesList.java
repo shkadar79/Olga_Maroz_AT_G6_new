@@ -15,12 +15,15 @@ public class NoodlesList {
         for (String i : noodles) {
             printList.append(i).append("-");
         }
-        System.out.print(printList.substring(0, printList.length()-1));
+        System.out.print(printList.substring(0, printList.length() - 1));
 
         System.out.println();
 
-        for (int i = 0; i<noodles.size(); i++) {
-            System.out.print(noodles.get(i).replace("a", "o") + " ");
+        for (int i = 0; i < noodles.size(); i++) {
+            noodles.set(i, noodles.get(i).replace("a", "o"));
+        }
+        for (int i = 0; i < noodles.size(); i++) {
+            System.out.print(noodles.get(i) + " ");
         }
 
 
