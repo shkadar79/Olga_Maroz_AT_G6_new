@@ -12,6 +12,7 @@ public class ChairsList {
             counter = i.getHeight() * i.getWidth();
             System.out.print(counter + " ");
         }
+        System.out.println();
         Map<Integer, Chair> map = new HashMap<>();
         for (int i = 0; i< furniture.size(); i++){
             map.put(i, furniture.get(i));

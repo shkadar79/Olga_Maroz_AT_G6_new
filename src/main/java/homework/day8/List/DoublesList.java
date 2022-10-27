@@ -19,5 +19,15 @@ public class DoublesList {
         }
         System.out.println(counter);
 
+        double sum = 0;
+        for (double i : doubles) {
+            double j = i % 1;
+            sum += j;
+        }
+        System.out.println(sum);
+
+        for (int i=0; i< doubles.size(); i++) {
+            System.out.print(doubles.get(i).intValue() + " ");
+        }
     }
 }
