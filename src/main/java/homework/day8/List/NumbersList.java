@@ -6,9 +6,8 @@ public class NumbersList {
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<Integer>(Arrays.asList(3342, 34, 79, 23426, 68, 1324, 55, 7699));
         for (int i : numbers) {
-            System.out.print(i + " ");
+            System.out.println(i);
         }
-        System.out.println();
 
         int counter = 0;
         for (int i : numbers) {
@@ -16,16 +15,16 @@ public class NumbersList {
         }
         System.out.println(counter);
 
+        Collections.sort(numbers);
         for (int i = 0; i < numbers.size(); i++) {
-            Collections.sort(numbers);
             System.out.print(numbers.get(i) + " ");
         }
         System.out.println();
 
-        for (int i = 0; i < numbers.size(); i++) {
-            Collections.sort(numbers, Collections.reverseOrder());
-            System.out.print(numbers.get(i) + " ");
+        Collections.reverse(numbers);
+        for (Integer i : numbers) {
+            System.out.print(i + " ");
         }
-        System.out.println();
     }
 }
+
