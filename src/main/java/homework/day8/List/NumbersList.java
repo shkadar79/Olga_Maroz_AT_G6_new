@@ -1,13 +1,10 @@
 package main.java.homework.day8.List;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class NumbersList {
     public static void main(String[] args) {
-        List<Integer> numbers = Arrays.asList(3342, 34, 79, 23426, 68, 1324, 55, 7699);
+        List<Integer> numbers = new ArrayList<Integer>(Arrays.asList(3342, 34, 79, 23426, 68, 1324, 55, 7699));
         for (int i : numbers) {
             System.out.print(i + " ");
         }
