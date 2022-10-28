@@ -1,4 +1,4 @@
-package main.java.classwork;
+package main.java.classwork.day7;
 
 import java.util.Scanner;
 

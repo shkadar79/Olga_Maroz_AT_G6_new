@@ -20,10 +20,11 @@ public class Task7 {
         for (int i = 0; i < names.size(); i++) {
             System.out.print(names.get(i) + " ");
         }
+        System.out.println();
         names.remove("Оля");
-        names.remove(3);
+        names.remove(2);
         for (String i : names) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
 
     }
