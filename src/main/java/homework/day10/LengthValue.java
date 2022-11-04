@@ -13,7 +13,7 @@ public class LengthValue {
             }
         }
         System.out.println(lengthValue.stream().peek(s -> System.out.println(s.intValue())).
-                mapToDouble(s -> s % 2.54).sum());
+                mapToDouble(s -> s * 2.54).sum());
     }
 
 }
