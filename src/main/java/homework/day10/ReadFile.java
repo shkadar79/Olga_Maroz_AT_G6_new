@@ -17,11 +17,12 @@ import java.util.stream.Stream;
 public class ReadFile {
     public static void main(String[] args) throws IOException {
         BufferedReader in = new BufferedReader(new FileReader("file.txt"));
-       // ???
         List<String> list = new ArrayList<>();
-        for (String line : list) {
+        while (in.ready()) {
+            String line = in.readLine();
             list.add(line);
         }
+        in.close();
         Date date = new Date();
         System.out.println(list.stream().skip(4).filter(s -> s.startsWith("Date log:")).map(s -> s.substring(0, 20)).map(s -> s + " " + date)
                 .collect(Collectors.joining("<br>", "", "")));

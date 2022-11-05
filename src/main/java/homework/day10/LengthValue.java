@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class LengthValue {
     public static void main(String[] args) {
         List<Integer> lengthValue = new ArrayList<>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i <= 20; i++) {
             if (i % 2 == 0) {
                 lengthValue.add(i);
             }

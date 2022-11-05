@@ -12,13 +12,14 @@ public class PersonRunner {
         List<Person> people = new ArrayList<>();
         Random randomAge = new Random();
         for (int i = 0; i < 100; i++) {
-            people.add(new Person("Name" + i, "Surname" + i, 15 + randomAge.nextInt(15)));
+            people.add(new Person("Name" + i, "Surname" + i, 15 + randomAge.nextInt(16)));
         }
+
         System.out.println(people.stream().
                 filter(s -> s.getAge() < 21).
                 peek(s -> System.out.println(s.getName() + " " + s.getAge())).
                 sorted(Comparator.comparing(Person::getSurname).thenComparing(Person::getName)).
-                limit(4).peek(s -> s.getName()).
+                limit(4).peek(Person::getName).
                 collect(Collectors.toList()));
     }
 }
