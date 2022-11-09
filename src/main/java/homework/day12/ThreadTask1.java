@@ -5,7 +5,7 @@ import java.util.Collection;
 
 public class ThreadTask1 {
     public static void main(String[] args) {
-        Thread t1 = new Thread(() -> mouseList());
+        Thread t1 = new Thread(ThreadTask1::mouseList);
         Thread t2 = new Thread(ThreadTask1::mouseList);
         Thread t3 = new Thread(ThreadTask1::mouseList);
         Thread t4 = new Thread(ThreadTask1::mouseList);
