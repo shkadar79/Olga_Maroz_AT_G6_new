@@ -19,10 +19,12 @@ public class Mouse {
     public void setName(String name) {
         this.name = name;
     }
+
     public Mouse(int number) {
         this.name = "Mouse" + number;
     }
-    public void peep(){
+
+    public void peep() {
         System.out.println(this.name + "PEEP!");
         try {
             Thread.sleep(200);
@@ -30,6 +32,7 @@ public class Mouse {
             throw new RuntimeException(e);
         }
     }
+
 }
 
 

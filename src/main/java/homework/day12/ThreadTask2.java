@@ -21,14 +21,15 @@ public class ThreadTask2 {
         t7.start();
 
     }
+
     public static void mouseList() {
         Collection<Mouse> mouse = new ArrayList<>();
         for (int i = 1; i < 19; i++) {
-            if (i % 2 == 0) {
-                mouse.add(new Mouse(i));
-            }
+            mouse.add(new Mouse(i));
         }
-        mouse.forEach(Mouse::peep);
+        mouse.stream().
+                filter(mouse1 -> Integer.parseInt(mouse1.getName().replaceAll("[^0-9]", "")) % 2 == 0).
+                forEach(Mouse::peep);
     }
 
 }
