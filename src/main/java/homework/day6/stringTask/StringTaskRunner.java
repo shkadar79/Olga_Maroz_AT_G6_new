@@ -12,7 +12,7 @@ public class StringTaskRunner {
         FindDigits task3 = new FindDigits();
         task3.printDigits("23 test is passed, 5 test is failed");
         CurrentDate task5 = new CurrentDate();
-        task5.getTime();
+        task5.getDateAndTime();
         DateFormat task6 = new DateFormat();
         task6.printDateFormat("22.00 07.09.2020");
     }

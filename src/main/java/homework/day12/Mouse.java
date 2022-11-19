@@ -21,11 +21,12 @@ public class Mouse {
     }
 
     public Mouse(int number) {
-        this.name = "Mouse" + number;
+
+        this.name = "Mouse " + number;
     }
 
     public void peep() {
-        System.out.println(this.name + "PEEP!");
+        System.out.println(this.name + " PEEP!");
         try {
             Thread.sleep(200);
         } catch (InterruptedException e) {

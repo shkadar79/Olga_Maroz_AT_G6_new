@@ -24,7 +24,8 @@ public class ThreadTask3 {
         for (int i = 1; i < 27; i++) {
             mouse.add(new Mouse(i));
         }
-        mouse.forEach(Mouse::peep);mouse.stream().
+        mouse.forEach(Mouse::peep);
+        mouse.stream().
                 filter(mouse1 -> Integer.parseInt(mouse1.getName().replaceAll("[^0-9]", "")) % 2 != 0).
                 forEach(Mouse::peep);
     }
